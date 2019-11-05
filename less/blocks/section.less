@@ -1,0 +1,44 @@
+.section {
+  width: 100%;
+  
+  &--grey {
+    background-color: #f1f1f1;
+  }
+  
+  &--accent {
+    background-color: @color-accent;
+  }
+  
+  &--footer {
+    color: @color-content-footer;
+    background-color: @color-background-footer;
+  }
+  
+  &__inner {
+    margin: 0 auto;
+    padding: 120px 35px;
+    width: 1240px;
+  }
+
+  
+  @media only screen and @desktop-width {
+    &__inner {
+      padding: 80px 20px;
+      width: 1024px;
+    }
+  }
+  
+  @media only screen and @tablet-width {  
+    &__inner {
+      padding: 40px 20px;
+      width: 768px;
+    }
+  }
+  
+  @media only screen and @mobile-width {
+    &__inner {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+}

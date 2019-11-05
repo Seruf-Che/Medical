@@ -1,0 +1,77 @@
+.button {
+  display: block;
+  margin: 0;
+  padding: 16px 4px;
+  width: 200px;
+  text-align: center;
+  color: @color-background;
+  font: inherit;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: @color-accent;
+  border: none;
+  overflow: visible;
+  transition: @transition;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  
+  &:hover {
+    color: @color-accent;
+    background-color: @color-background;
+    cursor: pointer;
+  }
+  
+  &--small {
+    width: 140px;
+  }
+  
+  &--extra-small {
+    padding: 12px 4px;
+    width: 120px;
+  }
+  
+  &--bordered {
+    color: @color-accent;
+    background: @color-background;
+    border: 1px solid @color-accent;
+    
+    &:hover {
+      color: @color-background;
+      background: @color-accent;
+    }
+  }
+  
+  &--alternative {
+    color: @color-content;
+    background: @color-background;
+    
+    &:hover {
+      color: @color-background;
+      background-color: @color-accent;
+      cursor: pointer;
+    }
+  }
+  
+  &--m-top {
+    margin-top: 60px;
+  }
+  
+  &--center {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /*Mixes*/
+  &__page-header {
+    margin-left: auto;
+  }
+  
+  @media only screen  and @tablet-width {
+    &__page-header {
+      margin: 0;
+    }
+  }
+}

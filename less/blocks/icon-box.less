@@ -1,0 +1,64 @@
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+  
+  &__icon {
+    margin-bottom: 37px;
+    max-width: 70px;
+    max-height: 70px;
+    fill: @color-accent;
+  }
+  
+  &__title {
+    display: block;
+    margin-bottom: 27px;
+    width: 100%;
+    color: @color-content;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  &__text {
+    display: block;
+    width: 100%;
+    color: @color-content;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  @media only screen and @tablet-width {
+    
+    &__icon {
+      margin-bottom: 27px;
+      max-width: 60px;
+      max-height: 60px;
+    }
+    
+    &__title {
+      margin-bottom: 17px;
+    }
+  }
+  
+  @media only screen and @mobile-width {
+    &__row {
+      margin-bottom: 20px;
+      
+      &--last {
+        margin-bottom: 0;
+      }
+    }
+    
+    &__icon {
+      margin-bottom: 10px;
+      max-width: 40px;
+      max-height: 40px;
+    }
+    
+    &__title {
+      margin-bottom: 8px;
+    }
+  }
+}

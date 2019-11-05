@@ -1,0 +1,45 @@
+.order {
+  &-1 {
+    order: 1;
+  }
+  
+  &-2 {
+    order: 2;
+  }
+  
+  &-3 {
+    order: 3;
+  }
+  
+  @media only screen and @tablet-width {
+    &--tablet {
+      &-1 {
+        order: 1;
+      }
+      
+      &-2 {
+        order: 2;
+      }
+      
+      &-3 {
+        order: 3;
+      }
+    }
+  }
+  
+  @media only screen and @mobile-width {
+    &--mobile{
+      &-1 {
+        order: 1;
+      }
+      
+      &-2 {
+        order: 2;
+      }
+      
+      &-3 {
+        order: 3;
+      }
+    }
+  }
+}

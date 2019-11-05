@@ -1,0 +1,49 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: @color-header-background;
+  color: @color-header-color;
+  z-index: 9;
+  
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    padding: 17px 35px;
+    width: 1240px;
+  }
+  
+  @media only screen and @desktop-width {
+    &__inner {
+      padding: 17px 20px;
+      width: 1024px;
+    }
+  }
+  
+  @media only screen and @tablet-width {
+    & {
+      position: absolute;
+    }
+    
+    &__inner {
+      justify-content: center;
+      padding: 10px 20px;
+      width: 768px;
+    }
+  }
+  
+  @media only screen and @mobile-width {
+    & {
+      position: relative;
+    }
+    
+    &__inner {
+      width: 100%;
+    }
+  }
+}
+
