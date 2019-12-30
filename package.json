@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Seruf's build",
   "main": "index.js",
+  "homepage": "https://seruf-che.github.io/medical/",
   "dependencies": {
     "grunt-csso": "^2.2.1",
     "imagemin-jpegtran": "^5.0.2",
@@ -11,6 +12,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
+    "gh-pages": "^2.1.1",
     "grunt": "^1.0.2",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.2.0",
@@ -32,7 +34,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "grunt build"
+    "build": "grunt build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC"
