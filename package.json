@@ -10,7 +10,7 @@
     "imagemin-jpegtran": "^6.0.0",
     "jquery.counterup": "^2.1.0",
     "node-static": "^0.7.11",
-    "webpack": "^4.41.5"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
